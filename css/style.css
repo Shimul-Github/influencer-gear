@@ -347,18 +347,35 @@ footer {
 /* Media Query for medium devices */
 
 @media screen and (min-width:577px) and (max-width:992px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 20px;
+    
+    header{
+        padding: 0px;
+        margin: 0px auto;
+        max-width: 100%;
     }
-
+    .nav-container{
+        align-items: center;
+        flex-direction: column;
+        margin-left: 200px;
+        margin-top: 30px;
+    }
+    .hr{
+        display: none;
+    }
+    .card{
+        padding: 15px;
+    }
     .nav-title {
         text-align: center;
     }
-
-    .banner-container {
-        flex-direction: column;
+    .banner{
+        width: 100%;
     }
+    .banner-container {
+        margin-left: 100px;
+        width: 100%;
+    }
+
 
     .banner-content {
         max-width: 100%;
@@ -368,11 +385,59 @@ footer {
         padding: 0px 20px;
         display: flex;
         align-items: center;
+        margin-left: 220px;
+        margin-bottom: 30px;
     }
 
     .banner-footer img {
         margin-right: 20px;
         height: 80px;
         width: 80px;
+    }
+    main{
+        padding: 0px;
+        margin: 0px auto;
+        width: 100%;
+        height: auto;
+    }
+    .collection-title{
+        margin-left: 250px;
+    }
+    .collection-card-container{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        column-gap: 30px;
+        padding-left: 35px;
+    }
+    .more-card{
+       padding: 0px;
+       position: none;
+       left: 0px;
+       margin: 20px 0px;
+       margin-left: 910px;
+       
+       
+    }
+    .feature-products{
+        justify-content: space-around;
+        padding-left: 150px;
+        width: 100%;
+        text-align: center;
+        /* flex-direction: column-reverse; */
+        gap: 20px;
+    }
+    .product-title{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .product-image{
+        
+    }
+    footer{
+        width: 100%;
+        padding-left: 220px;
+    }
+    .footer-info{
+        padding-right: 160px;
     }
 }
