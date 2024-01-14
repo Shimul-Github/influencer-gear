@@ -104,7 +104,7 @@ main {
 .banner-pic{
     background-image: url(../images/bg.png);
     background-repeat: no-repeat;
-    background-position:center center;
+    background-position:60% 30%;
     /*background: #cca2a213;
     */padding: 0px;
     border: 5px solid #f7f0ff;
@@ -227,42 +227,120 @@ footer {
 .social-links {
     padding-top: 10px;
 }
-
+.hide{
+    display:none
+}
 /* Media Query for small devices */
 /* header part */
 @media screen and (max-width:576px) {
     header {
         padding: 0px;
     }
-
-    .nav-container,
-    .banner-container {
+    .nav-container{
         flex-direction: column;
-        gap: 2rem;
+        justify-content: center;
+        margin-top: 60px;
     }
-
     .nav-title {
+        font-size: 1rem;
+        font-weight: 700;
         text-align: center;
+        width: 100%;
     }
-
-    .nav-container ul li {
+    .nav-links ul li {
         margin-right: 1.2rem;
+        font-size: 1.5rem;
     }
-
+    .banner-pic img{
+        width: 202px;
+        height: 190px;
+    }
+    .banner-pic{
+        width: 202px;
+        height: 190px;
+        border: 2px solid #f7f0ff;
+        padding: 50px;
+        margin: 0px auto;
+        text-align: center;
+        /* background-image: none; */
+}
     .banner-content {
         max-width: 100%;
         padding: 15px;
+        text-align: center;
+        
     }
-
+    .banner-container{
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    .banner-title{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: normal;
+        margin: 21px;
+    }
+    .banner-description{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+        margin: 21px;
+    }
+    .btn-primary{
+        margin-left: 100px;
+    }
     .banner-footer {
-        padding: 0px;
+        padding: 10px 15px;
         text-align: center;
     }
-
-    .collection-card-container {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 4px;
+    .banner-footer img{
+        width: 35.381px;
+        height: 25.838px;
     }
+
+    .hr{
+        display: none;
+    }
+    main{
+        padding: 0px;
+    }
+    .collection-title{
+        text-align: center;
+    }
+    .collection-card-container {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        padding: 4px;
+        padding-left: 40px;
+    }
+
+    .card{
+        padding: 5px;
+       text-align: left;
+    }
+   .more-card{
+    position: none;
+    left: 0px;
+   }
+   .more-card p{
+    padding-left: 250px;
+   }
+
+   .feature-products{
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px;
+   }
+   .product-title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+   }
+   .title-description{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+   }
 
 }
 
