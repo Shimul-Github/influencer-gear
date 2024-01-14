@@ -100,3 +100,63 @@ hr {
 .banner-footer img{
     margin-right: 3.78rem;
 }
+
+
+
+
+
+
+/* Media Query for small devices */
+/* header part */
+@media screen and (max-width:576px) {
+    header{
+        padding: 0px;
+    }
+    .nav-container,.banner-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .nav-title{
+        text-align: center;
+    }
+    .nav-container ul li{
+        margin-right: 1.2rem;
+    }
+    .banner-content{
+        max-width: 100%;
+        padding: 15px;
+    }
+    .banner-footer{
+        padding: 0px;
+        text-align: center;
+    }
+    
+}
+
+/* Media Query for medium devices */
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .nav-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .nav-title{
+        text-align: center;
+    }
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner-content{
+        max-width: 100%;
+    }
+    .banner-footer{
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+    }
+    .banner-footer img{
+       margin-right:20px;
+       height: 80px;
+       width: 80px;
+    }
+}
